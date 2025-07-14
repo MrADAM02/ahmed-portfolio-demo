@@ -3,95 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed | Full-Stack Web Developer</title>
     <meta
       name="description"
-      content="Portfolio of Ahmed, a front-end developer showcasing projects, skills, and contact information."
+      content="Professional portfolio showcasing my web development projects and skills"
     />
-    <title>Ahmed | Front-End Developer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <nav role="navigation">
-        <h1>Ahmed</h1>
+    <header role="banner">
+      <nav role="navigation" aria-label="Main navigation">
         <ul>
-          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#about">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <h1>Welcome to My Portfolio</h1>
     </header>
-
-    <!-- About Me Section -->
-    <section id="about-me">
-      <h2>About Me</h2>
-      <p>
-        I'm a passionate front-end developer skilled in HTML, CSS, and
-        JavaScript. I love building accessible and responsive web applications.
-        
-      </p>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <article>
+        <p>
+          I'm a passionate full-stack web developer with expertise in HTML, CSS,
+          and JavaScript. I love creating accessible, responsive websites that
+          provide great user experiences.
+        </p>
+        <p>
+          When I'm not coding, you can find me contributing to open-source
+          projects or learning new web technologies.
+        </p>
+      </article>
     </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">My Projects</h2>
 
       <article>
-        <h3>Project One</h3>
+        <h3>E-commerce Website</h3>
         <figure>
-          <img src="project1.png" alt="Screenshot of Project One" />
+          <img
+            src="ecommerce-website-homepage-design.webp"
+            alt="Screenshot of e-commerce website showing product listings"
+            width="400"
+          />
           <figcaption>
-            A web app built using HTML, CSS, and JavaScript.
+            A fully responsive online store with shopping cart functionality
           </figcaption>
         </figure>
-        <p>Description of the first project goes here.</p>
+        <p>
+          Built with React and Node.js, featuring product filtering and secure
+          checkout.
+        </p>
       </article>
 
       <article>
-        <h3>Project Two</h3>
+        <h3>Weather Dashboard</h3>
         <figure>
-          <img src="project2.png" alt="Screenshot of Project Two" />
-          <figcaption>A React-based project with responsive design.</figcaption>
+          <img
+            src="Weather.jpg"
+            alt="Weather application showing current conditions and forecast"
+            width="400"
+          />
+          <figcaption>
+            Real-time weather information with 5-day forecast
+          </figcaption>
         </figure>
-        <p>Description of the second project goes here.</p>
+        <p>
+          Uses the OpenWeather API to display current and forecasted weather
+          conditions.
+        </p>
       </article>
     </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Technical Skills</h2>
       <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
+        <li>HTML5 & Semantic HTML</li>
+        <li>CSS3 & Sass</li>
         <li>JavaScript (ES6+)</li>
-        <li>React</li>
-        <li>Git & GitHub</li>
+        <li>Angular.js</li>
         <li>Responsive Design</li>
+        <li>RESTful APIs</li>
+        <li>Git & GitHub</li>
+        <li>Node.js</li>
       </ul>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form action="#" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Get In Touch</h2>
+      <form id="contact-form" aria-label="Contact form">
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            aria-required="true"
+          />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true"
+          />
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            aria-required="true"
+          ></textarea>
+        </div>
         <button type="submit">Send Message</button>
       </form>
     </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <p>&copy; 2025 Ahmed. All rights reserved.</p>
+    <footer role="contentinfo">
+      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+      <p>
+        Follow me on
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+          >GitHub</a
+        >
+        and
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+          >LinkedIn</a
+        >.
+      </p>
     </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>
